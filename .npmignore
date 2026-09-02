@@ -1,0 +1,19 @@
+# Source & Development
+src/
+test/
+.github/
+
+# Configurations
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+
+# Tooling & Editor cache
+.vscode/
+.idea/
+*.log
+coverage/
+
+# Misc
+.DS_Store
+Thumbs.db

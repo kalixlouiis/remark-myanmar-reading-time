@@ -1,0 +1,62 @@
+{
+  "name": "remark-myanmar-reading-time",
+  "version": "1.0.0",
+  "description": "Accurate reading time calculator for Myanmar (Burmese) script and mixed-language content in Astro, Next.js, and Remark.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "remark",
+    "remark-plugin",
+    "astro",
+    "astro-integration",
+    "nextjs",
+    "reading-time",
+    "myanmar",
+    "burmese",
+    "markdown",
+    "mdx"
+  ],
+  "author": "Khant Sint Heinn <kalixlouiis@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalixlouiis/remark-myanmar-reading-time.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalixlouiis/remark-myanmar-reading-time/issues"
+  },
+  "homepage": "https://github.com/kalixlouiis/remark-myanmar-reading-time#readme",
+  "dependencies": {
+    "mdast-util-to-string": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^22.0.0",
+    "mdast": "^3.0.0",
+    "remark": "^15.0.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vfile": "^6.0.3",
+    "vitest": "^2.1.0"
+  }
+}
